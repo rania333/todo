@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box; /* 3l4an l margin w l padding may5od4 mn msa7t l box */
+    margin: 0;
+    padding: 0
+}
+
+body {
+    font-family: tahoma, sans-serif
+}
+
+/***** to do list*******/
+.toDoList {
+  width: 1200px;
+  margin: 10px 130px;
+  background-color: #F6F6F6;
+  padding: 10px;
+}
+.toDoList .addTask {
+  padding: 10px;
+  background-color: #C48793;
+  position: relative;
+}
+.toDoList .addTask input {
+  display: inline-block;
+  padding: 10px ;
+  border: none;
+  background-color: rgba(228, 205, 210, .34);
+  width: calc(100% - 15px); /* y3ni 100% mn msa7t l up minus 15 px dol bto3 l plus*/
+  color: #FFF;
+  font-size: 20px;
+}
+.toDoList .addTask input:focus {
+  outline: none;
+}
+.toDoList .addTask .plus {
+  position: absolute;
+  height: 43px;
+  width: 43px;
+  background-color: #FFF;
+  right: 12px;
+  border-radius: 50%;
+  line-height: 43px;
+  text-align: center;
+  color: #C48793;
+  cursor: pointer;
+  font-size: 38px;
+  -webkit-transition: transform .3s;
+  -moz-transition: transform .3s;
+  transition: transform .3s;
+} 
+.toDoList .addTask .plus:hover {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.toDoList .allTasks {
+  padding: 10px;
+}
+.toDoList .allTasks .noTasks {
+  color: #777;
+  font-size: 15px;
+}
+.toDoList .allTasks > span {
+  display: block;
+  background-color: #FFF;
+  padding: 10px;
+  margin: 10px;
+}
+.toDoList .allTasks > span:not(:last-child) { /* m4 48ala**/
+  margin-bottom: 5px;
+}
+.toDoList .allTasks .taskBox .delete {
+  float: right;
+  background-color: #87C4B8;
+  padding: 4px 10px;
+  color: #FFF;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.toDoList .allTasks .taskBox.finished {  /*lma l task y5ls*/
+  text-decoration: line-through;
+}
+.taskState {
+  overflow: hidden;
+  margin: 10px 130px;
+  width: 1200px;
+  font-size: 12px;
+}
+.taskState .taskCount {
+  width: 50%;
+  float: left;
+  padding: 10px;
+  border-radius: 2px;
+  color: #C48793;
+  font-size: xx-large;
+}
+.taskState .taskCompleted {
+  width: 50%;
+  float: right;
+  padding: 10px;
+  text-align: right;
+  border-radius: 2px;
+  color: #C48793;
+  font-size: xx-large;
+}
+.taskState .taskCount span,
+.taskState .taskCompleted span {
+  color: #FFF;
+  padding: 1px 5px;
+  font-size: 20px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+.taskState .taskCount span,
+.taskState .taskCompleted span {
+  background-color: #87C4B8;
+}
+
